@@ -1,0 +1,282 @@
+﻿*{
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+#header .headtop{
+    width: 100%;
+    height: 35px;
+    background-color: #333;
+}
+#header .headtop .headcenter{
+    font-size: 12px;
+    height: 35px;
+    line-height: 35px;
+    width: 1200px;
+    margin: 0 auto;
+}
+#header .headcenter .left{
+    color:#dddddd;
+    float: left;
+}
+#header .headtop .headcenter .right{
+
+    float: right;
+    display: inline-block;
+}
+#header .headcenter .right li{
+    text-align: center;
+    width: 80px;
+    /*background-color: pink;*/
+    display: inline-block;
+    /*float: left;*/
+}
+#header .headcenter .right li a{
+    color: #dddddd;
+}
+#header .headcenter .right .active a{
+    color:#209eff;
+}
+
+#header .headcenter .right .mobile{
+    position: relative;
+    top:6px;
+    margin-right: 5px;
+}
+#header .headbottom{
+    height: 70px;
+    line-height: 70px;
+    border-bottom: 3px solid #278bdd;
+}
+#header .headbottom .headcenter{
+    height: 70px;
+    line-height: 70px;
+    width: 1200px;
+    margin: 0 auto;
+}
+#header .headbottom .headcenter .left{
+    float: left;
+}
+#header .headbottom .headcenter .left img{
+    margin-top: 10px;
+}
+#header .headbottom .headcenter .center{
+    position: relative;
+    left:200px;
+    text-align: center;
+    width: 720px;
+    /*background-color: pink;*/
+    float:left;
+}
+#header .headbottom .headcenter .right{
+    position: relative;
+    left:60px;
+    width: 200px;
+    float: right;
+}
+/*下拉列表*/
+#header .headbottom .headcenter .center li{
+    width: 100px;
+    float:left;
+}
+ .center>li{
+            float: left;
+        }
+		
+        .center>li:first-child a{
+            border-radius: 5px 0 0 5px;
+        }
+        .center>li:last-child a{
+            border-radius: 0 5px 5px 0;
+        }
+        .drop-down{
+            /*position: relative;*/
+            height: 1px;
+        }
+        .drop-down-content{
+            padding: 0;
+            opacity: 0.2;
+            height: 0;
+            overflow: hidden;
+            transition: all 1s ease;
+            /*position: absolute;*/
+        }
+        
+        h3{
+            font-size: 20px;
+            clear: both;
+/*            position: relative;
+            z-index: -1;*/
+        }
+        .drop-down-content li:hover a{
+	background-color:red;
+	border-top: 1;
+        }
+        .center .drop-down:hover .drop-down-content{
+            opacity: 1;
+            height: 200px;
+        }
+
+
+#header .headbottom .headcenter .right img{
+    float:left;
+    position: relative;
+    top:15px;
+    left:-10px;
+}
+#header .headbottom .headcenter .right .box{
+    position: relative;
+    top:-10px;
+}
+#header .headbottom .headcenter .right h2{
+    font-size: 22px;
+    color:#f60;
+    /*margin: 0;*/
+}
+
+#header .headbottom .headcenter .right h3{
+    font-weight: normal;
+    font-size: 12px;
+    /*margin: 0;*/
+    margin-top: -50px;
+    color:#999;
+}
+#scrollcenter{
+    background-color: rgb(1,3,42);
+    position: relative;
+
+}
+
+
+//轮播效果展示
+#scrollcenter .case{
+    width: 1366px;
+    height: 400px;
+    margin: 0 auto;
+    background-repeat: no repeat;
+}
+
+.case_box{
+position:relative;
+width:1366px;
+height:400px;
+overflow:hidden
+}
+
+.case_box p{
+z-index:2;
+position:absolute;
+text-indent:-9999px;
+width:28px;
+height:51px;
+top:40%;
+cursor:pointer
+}
+
+.case_box .prev{
+text-indent:-9999px;
+left:0px
+}
+.case_box .next
+{
+top:40%;
+right:0px
+}
+
+.case_box ul{
+position:absolute;height:400px;
+overflow:hidden;
+top:0px;left:0px
+}
+.case_box ul li{
+width:1366px;
+float:left;
+height:400px
+}
+.case_box ul li dl.case_info
+{
+line-height:17px;
+margin:95px 0px 0px 475px;
+width:295px;zoom:1;
+color:#616741;
+font-size:13px;
+overflow:hidden
+}
+.case_box ul li dl.case_info dd
+{
+text-indent:26px
+}
+
+.case_box ul li.case_1
+{
+ background-repeat: no repeat;
+ background: url("../images/hua1.jpg");
+}
+.case_box ul li.case_2
+{
+ background-repeat: no repeat;
+ background: url("../images/hua2.jpg");
+}
+
+.case_box ul li.case_3
+{
+ background-repeat: no repeat;
+ background: url("../images/hua3.jpg");
+}
+
+.case_box ul li.case_4
+{
+ background-repeat: no repeat;
+ background: url("../images/hua4.jpg");
+}
+
+.case_box ul li.case_5
+{
+ background-repeat: no repeat;
+ background: url("../images/hua5.jpg");
+}
+
+.case_box ul li.case_6
+{
+ background-repeat: no repeat;
+ background: url("../images/hua6.jpg");
+}
+
+.case_box ul li.case_2 dl{margin-top:150px}
+.case_box ul li.case_3 dl{margin-top:135px}
+.case_box ul li.case_4 dl{margin-top:110px}
+.case_box ul li.case_5 dl{margin-top:120px}
+.case_box ul li.case_6 dl{margin-top:115px}
+
+.case_info_add dd{line-height:22px}
+
+.case_box ol
+{
+position:absolute;
+bottom:0;
+left:50%;
+margin:0 0 0 -65px;
+height:12px;
+z-index:99;
+}
+.case_box ol li
+{
+float:left;
+margin:0 4px;
+display:inline;
+width:12px;
+height:12px;
+line-height:999em;
+background:url(../images/pagination.png) no-repeat;
+overflow:hidden;
+cursor:pointer;
+}
+.case_box ol li.active
+{
+background-position:0 -12px;
+}
